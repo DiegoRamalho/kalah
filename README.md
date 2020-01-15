@@ -10,7 +10,7 @@ This is a Java 8 project of a game of n-stones Kalah. It uses:
 
 ## About the game
 
-[Kalah][https://en.wikipedia.org/wiki/Kalah] is a two players board game where each player has 6 small pits, called houses, on each side; and a big pit, called kalah. The objective of the game is to capture more stones than the opponent.
+ [Kalah](https://en.wikipedia.org/wiki/Kalah) is a two players board game where each player has 6 small pits, called houses, on each side; and a big pit, called kalah. The objective of the game is to capture more stones than the opponent.
 
 The pits in the board are numbered from 1 to 14 where 7 and 14 are the kalah. The northern player owns the pits 1 to 7 and the southern the pits 8 to 14. The board is prepared as follows:
 
