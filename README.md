@@ -1,4 +1,4 @@
-# API of a game of n-stone Kalah.
+# API of a Kalah n-stone game.
 
 This is a Java 8 project of a game of n-stones Kalah. It uses:
 
