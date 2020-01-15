@@ -1,0 +1,29 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration is used for unit/integration tests.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring:
+  application:
+    name: kalah-test
+  jackson:
+    serialization.write_dates_as_timestamps: false
+  cache:
+    type: none
+
+# ===================================================================
+# Application specific properties
+# ===================================================================
+application:
+  amount-of-stones: 6
+  swagger:
+    default-include-pattern: /games/.*
+    title: Kalah API
+    description: API Documentation of a game of n-stone Kalah.
+    version: 1.0.0

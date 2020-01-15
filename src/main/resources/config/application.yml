@@ -1,0 +1,39 @@
+# ===================================================================
+# Spring Boot configuration.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring:
+  application:
+    name: kalah
+  jackson:
+    serialization.write_dates_as_timestamps: false
+  mvc:
+    favicon:
+      enabled: false
+  thymeleaf:
+    cache: true
+    mode: XHTML
+
+# ===================================================================
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+    min-response-size: 1024
+
+# ===================================================================
+# Application specific properties
+# ===================================================================
+application:
+  amount-of-stones: 6
+  swagger:
+    default-include-pattern: /games/.*
+    title: Kalah API
+    description: API Documentation of a game of <i>n-stone Kalah</i>.<br/>The pits in the board are numbered from 1 to 14 where 7 and 14 are the <i>kalah</i>.<br/>The northern player owns the pits 1 to 7 and the southern the pits 8 to 14.<br/>The board is prepared as follows:<pre><br/>                                    <b>Northern Player pits</b> <br/>                   <- (06) <- (05) <- (04) <- (03) <- (02) <- (01) <-<br/>                    |                                               / \ <br/>                   \ /                                               | <br/>                   (07) << <b>Northern <i>Kalah</i></b>         <b>Southern <i>Kalah</i></b> >> (14) <br/>                    |                                               / \ <br/>                   \ /                                               | <br/>                   -> (08) -> (09) -> (10) -> (11) -> (12) -> (13) -> <br/>                                    <b>Southern Player pits</b></pre><br/>The northern player always starts the game.
+    version: 1.0.0
