@@ -36,7 +36,7 @@
         <!-- Docker plugin version. https://github.com/spotify/docker-maven-plugin -->
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <!-- Automated JSON API documentation for API's built with Spring. http://springfox.github.io/springfox/ -->
-        <springfox.version>2.9.2</springfox.version>
+        <springfox.version>2.10.0</springfox.version>
         <!-- Coverage. http://www.eclemma.org/jacoco/-->
         <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
     </properties>
